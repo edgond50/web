@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corazones OG</title>
+    <style>
+        body {
+
+
+
+
+
+            background-color: pink;
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        .heart {
+            position: fixed;
+            top: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(-45deg);
+            animation: fall linear infinite, fadeOut linear 5s;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            top: 0;
+            left: 10px;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(-45deg);
+            }
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .rivals{
+            border-radius: 10px;
+            width: 90%;
+           position: absolute;
+           top: 30%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+        .xd{
+            text-align: center;
+        }
+        .nose{
+            text-align: center;
+            padding-top: 50%;
+            font-size: 20px;
+        }
+        .xDD{
+            border-radius: 10px;
+            width: 70%;
+           position: absolute;
+           top: 75%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+
+        }
+        .nosexd{
+            text-align: center;
+            padding-top: 150%;
+            font-size: 20px;
+            
+        }
+        .noses{
+            border-radius: 10px;
+            width: 70%;
+           position: absolute;
+           top: 180%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+        .nigga{
+            text-align: center;
+            padding-top: 78%;
+            font-size: 30px;
+        }
+        .nose1{
+            border-radius: 10px;
+            width: 70%;
+           position: absolute;
+           top: 231%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+        .nose2{
+            border-radius: 10px;
+            width: 70%;
+           position: absolute;
+           top: 261%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+        .nose3{
+            border-radius: 10px;
+            width: 70%;
+           position: absolute;
+           top: 291%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+        .nose4{
+            border-radius: 10px;
+            width: 70%;
+           position: absolute;
+           top: 326%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+        }
+
+    </style>
+</head>
+<body>
+    <img class="xDD" src="https://preview.redd.it/jh0opzi99yie1.png?auto=webp&s=633c44ac56dfb96bec3ad0f7b184c9c071d2f2af" alt="">
+ <img src="https://preview.redd.it/tezmsktqytie1.png?width=1080&crop=smart&auto=webp&s=a730812be5024151119f2da28958a43fdf2c9b2d" class="rivals">
+<h1 class="xd">Para la mejor polola del mundo <br>
+    <3</h1>
+<p class="nosexd">Desde el primer momento en que te conocí, supe que había algo diferente en ti. Eres increíble en todos los sentidos: hermosa, inteligente, divertida y con una manera de ser que simplemente me encanta. No hay día en que no me sorprendas, en que no me hagas sonreír o en que no me dé cuenta de lo afortunado que soy por tenerte en mi vida.
+
+    Eres la chica más perfecta, no porque seas como un ideal de alguien más, sino porque eres única, porque cada parte de ti, tu forma de ser, te hace especial. Me encanta cómo podemos hablar de todo, jugar juntos y hacer que cada momento tenga su propia magia.
+    
+    No importa la distancia, porque lo que realmente nos une es más fuerte. Gracias por ser tú, por ser esa persona increíble que ilumina mis días. No cambiaría nada de ti, porque así, tal como eres, eres perfecta para mí. </p>
+<script>
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.style.left = Math.random() * 100 + 'vw';
+        let duration = Math.random() * 2 + 3; // Entre 3s y 5s
+        heart.style.animationDuration = duration + 's, ' + duration + 's';
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, duration * 1000);
+    }
+
+    setInterval(createHeart, 600);
+</script>
+<img class="noses" src="https://i.redd.it/q96iepm6gyie1.png" alt="">
+<p class="nigga">Muchisisisisisimas gracias por darme estos momentos unicos mi amor 💗</p>
+
+<img class="nose1" src="https://preview.redd.it/9n4r7enbyyie1.png?width=999&format=png&auto=webp&s=c12119fb46372fa8ddf4e6b060e24e90425d10f2" alt="">
+<img class="nose2" src="https://preview.redd.it/cifl0hnbyyie1.png?width=1919&format=png&auto=webp&s=53a801c82d373608ab28d1a83721d19c08c4f1ef" alt="">
+<img class="nose3" src="https://preview.redd.it/hn5pcknbyyie1.png?width=1295&format=png&auto=webp&s=891b656f82d87326769cdca62cde7fa5445dfff1" alt="">
+<img class="nose4" src="https://preview.redd.it/eegl2knbyyie1.png?width=925&format=png&auto=webp&s=9b464486de53e42d58f033957fbb85b82c64f27b" alt="">
+
+</body>
+</html>
